@@ -1,0 +1,117 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3600585590" file="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI\ALIIFAnalysis.prj" location="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI" name="ALIIFAnalysis" target="target.mlapps" target-name="Package App">
+    <param.appname>ALIIFAnalysis</param.appname>
+    <param.authnamewatermark>Elvis Pandzic</param.authnamewatermark>
+    <param.email>e.pandzic@unsw.edu.au</param.email>
+    <param.company>Katharina Gaus Light Microscopy Facility</param.company>
+    <param.icon>${PROJECT_ROOT}\ALIIFAnalysis_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\ALIIFAnalysis_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\ALIIFAnalysis_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\ALIIFAnalysis_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary>This GUI allows user to analyse IF images of covid infected ALI cultures. The outputs include images and statistics of Covid positive areas.</param.summary>
+    <param.description>This GUI allows user to load Covid positive IF image collected in tiled mode, of full well imaged in 96 well plate. User can correct images for background intensity. User is then prompted to select a rouph polygon containing the area of well that are deemed good for analysis. Next user is binarising the image by thresholding and cleaning out all the small clusters or noise fragments. Final images are exported and stats on the Covid postiive clusters are exported.</param.description>
+    <param.screenshot>C:\Users\BMIF\AppData\Local\Temp\tpce93be94_6de5_47ce_93cb_f8df49f56876.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>Image Processing Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>17</item>
+    </param.products.id>
+    <param.products.version>
+      <item>11.5</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>feb0a004-71dd-4f4e-b800-113c413f0cb6</param.guid>
+    <unset>
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\ALIIFAnalysis.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\bfCheckJavaMemory.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\bfCheckJavaPath.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\bfGetFileExtensions.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\bfGetPlane.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\bfGetReader.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\bfInitLogging.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\bfopen.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\createMinimalOMEXMLMetadata.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\Aria final Scripts\Supporting_Scripts\bfmatlab\is_octave.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GetOMEData.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\gfp.m</file>
+      <file>${PROJECT_ROOT}\readOMEAlternativeGUI.m</file>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\yfp.m</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\bfmatlab</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r" name="GUI" optional="false">C:\Users\BMIF\Dropbox\codes\ElvisBackup\codes2011to2016\simul8r\simul8r\GUI</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
